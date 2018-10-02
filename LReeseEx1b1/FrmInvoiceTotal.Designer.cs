@@ -49,6 +49,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "&Subtotal:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtSubtotal
             // 
@@ -56,6 +57,7 @@
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
             this.txtSubtotal.TabIndex = 1;
+            this.txtSubtotal.TextChanged += new System.EventHandler(this.txtSubtotal_TextChanged);
             // 
             // label2
             // 
@@ -66,6 +68,7 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Discount percent:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtDiscountPercent
             // 
@@ -74,6 +77,7 @@
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountPercent.TabIndex = 3;
             this.txtDiscountPercent.Text = "5";
+            this.txtDiscountPercent.TextChanged += new System.EventHandler(this.txtDiscountPercent_TextChanged);
             // 
             // label3
             // 
@@ -84,6 +88,7 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Discount Amount:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtDiscountAmount
             // 
@@ -93,6 +98,7 @@
             this.txtDiscountAmount.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountAmount.TabIndex = 7;
             this.txtDiscountAmount.TabStop = false;
+            this.txtDiscountAmount.TextChanged += new System.EventHandler(this.txtDiscountAmount_TextChanged);
             // 
             // label4
             // 
@@ -103,6 +109,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Total:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtTotal
             // 
@@ -112,6 +119,7 @@
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 9;
             this.txtTotal.TabStop = false;
+            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // btnCalculate
             // 
