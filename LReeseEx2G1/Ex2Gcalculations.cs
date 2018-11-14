@@ -10,7 +10,7 @@ namespace LReeseEx2G1
     {
         public static string Switch01(string customerType)
         {
-            //1A Switch with no default
+            //1A) Switch with no default
             decimal discountPercent = -1m;
 
             switch (customerType)
