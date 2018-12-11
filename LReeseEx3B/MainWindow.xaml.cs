@@ -47,7 +47,7 @@ namespace LReeseEx3B
                 decimal subtotal = decimal.Parse(this.inputTextbox0a.Text);
                 decimal discountPercent = 0m;
                 Ex3bCalculations.GetDiscountPercent(subtotal, out discountPercent);
-                resultTextBox0.Text = discountPercent.ToString("f3");
+                resultTextBox1.Text = discountPercent.ToString("f3");
             }
             catch
             {
