@@ -45,7 +45,7 @@ namespace LReeseEx3B
             try
             {
                 decimal subtotal = decimal.Parse(this.inputTextbox0a.Text);
-                decimal discountPercent = 0m;
+                decimal discountPercent;
                 Ex3bCalculations.GetDiscountPercent(subtotal, out discountPercent);
                 resultTextBox1.Text = discountPercent.ToString("f3");
             }
@@ -101,7 +101,7 @@ namespace LReeseEx3B
                 double Fahrenheit = Double.Parse(this.inputTextbox4a.Text);
                 double Celsius = Ex3bCalculations.FahrenheitToCelsius(Fahrenheit);
 
-                resultTextBox4.Text = Celsius.ToString();
+                resultTextBox4.Text = Celsius.ToString("f1");
             }
             catch
             {
@@ -113,10 +113,10 @@ namespace LReeseEx3B
             try
             {
                 double Celsius = Double.Parse(this.inputTextbox5a.Text);
-                double fahrenheit = 0;
+                double fahrenheit;
                 Ex3bCalculations.CelsiusToFahrenheit(Celsius, out fahrenheit);
 
-                resultTextBox5.Text = fahrenheit.ToString();
+                resultTextBox5.Text = fahrenheit.ToString("f1");
             }
             catch
             {
