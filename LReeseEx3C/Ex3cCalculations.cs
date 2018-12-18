@@ -71,7 +71,7 @@ namespace LReeseEx3C
             {
                 double avg = Calc5(numbers);
 
-                foreach (int number in numbers)
+                foreach (double number in numbers)
                 {
                     if (number >= avg)
                         aboveAvgList.Add(number);
